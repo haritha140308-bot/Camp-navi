@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Campus Navigation</title>
+
+    <!-- Cute Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Smart Campus Navigation</h1>
+
+    <!-- ROUTE DROPDOWNS -->
+    <label>Current Location:</label>
+    <select id="source">
+        <option>Main Gate</option>
+        <option>Admin Block</option>
+        <option>CSE Block</option>
+        <option>ECE Block</option>
+        <option>Library</option>
+        <option>Boys Mess</option>
+        <option>Girls Mess</option>
+        <option>Boys Hostel</option>
+        <option>Girls Hostel</option>
+        <option>EEE Block</option>
+        <option>Mech block</option>
+        <option>CSBS Block</option>
+    </select>
+
+    <label>Destination:</label>
+    <select id="destination">
+        <option>Main Gate</option>
+        <option>Admin Block</option>
+        <option>CSE Block</option>
+        <option>ECE Block</option>
+        <option>Library</option>
+        <option>Boys Mess</option>
+        <option>Girls Mess</option>
+        <option>Boys Hostel</option>
+        <option>Girls Hostel</option>
+        <option>EEE Block</option>
+        <option>Mech block</option>
+        <option>CSBS Block</option>
+    </select>
+
+    <button id="routeBtn">Find Route</button>
+
+    <hr>
+
+    <!-- CHATBOX -->
+    <h2>Campus Assistant 🤖</h2>
+    <input type="text" id="chatInput" placeholder="Ask me something..." />
+    <button id="askBtn">Ask</button>
+    <button id="voiceBtn">🎤 Speak</button>
+    <p id="chatResponse"></p>
+
+    <hr>
+
+    <!-- LIVE MAP -->
+    <h2>Live Campus Map 🗺️</h2>
+    <div id="map"></div>
+
+</div>
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<!-- Custom JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
